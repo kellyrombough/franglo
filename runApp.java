@@ -7,8 +7,15 @@ import java.util.Scanner;
 
 public class runApp {
 	
+	private static ArrayList<verb>[] wordBank = new ArrayList[5];
+	
 	public static void main (String[] args) {
 		ArrayList<verb> v=loadVerbDb("verb_db.txt");
+		wordBank[0]=v;
+		wordBank[1]=new ArrayList<verb>();
+		wordBank[2]=null;
+		wordBank[3]=null;
+		wordBank[4]=null;
 		Random r = new Random();
 		Scanner sc=new Scanner(System.in);
 		
@@ -18,7 +25,7 @@ public class runApp {
 		int count=0;
 		for (int i=0; i<10; i++) {
 			System.out.println(" Please enter the correct english translation:");
-			verb test=v.get(r.nextInt(v.size()));
+			verb test=wordBank[0].get(r.nextInt(v.size()));
 			System.out.println(test.getFrenchTr());
 			String guess=sc.nextLine();
 			String[] s=test.getEnglishTr().split(", ");
@@ -28,6 +35,7 @@ public class runApp {
 					System.out.println("correct");
 					flag=true;
 					count++;
+					moveWord(test, 0, 1);
 					break;
 				}
 			}
@@ -59,5 +67,14 @@ public class runApp {
 			e.printStackTrace();
 		}
 		return null;
+	}
+	
+	public static void moveWord(verb v, int oldList, int newList) {
+		wordBank[newList].add(v);
+		wordBank[oldList].remove(v);
+	}
+	
+	public static void resize(ArrayList<verb> list) {
+		//make a new ArrayList not including all the empty elements
 	}
 }
