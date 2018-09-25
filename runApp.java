@@ -21,14 +21,21 @@ public class runApp {
 			verb test=v.get(r.nextInt(v.size()));
 			System.out.println(test.getFrenchTr());
 			String guess=sc.nextLine();
-			if (guess.equals(test.getEnglishTr())) {
-				System.out.println("correct!");
-				count++;
+			String[] s=test.getEnglishTr().split(", ");
+			boolean flag=false;
+			for (int j=0; j<s.length; j++) {
+				if (guess.equals(s[j])) {
+					System.out.println("correct");
+					flag=true;
+					count++;
+					break;
+				}
 			}
-			else {
+			if (!flag) {
 				System.out.println("not quite");
 				System.out.println("Correct response: " + test.getEnglishTr());
 			}
+			flag=false;
 		}
 		System.out.println("Your score is " + count +"/10");
 	}
