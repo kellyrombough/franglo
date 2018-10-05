@@ -25,36 +25,7 @@ public class runApp {
 		loopWords(2);
 		loopWords(3);
 		loopWords(4);
-		loopWords(5);
-		/*int count=0;
-		for (int i=0; i<10; i++) {
-			System.out.println(" Please enter the correct english translation:");
-			verb test=wordBank[0].get(r.nextInt(wordBank[0].size()));
-			System.out.println(test.getFrenchTr());
-			String guess=sc.nextLine();
-			String[] s=test.getEnglishTr().split(", ");
-			boolean flag=false;
-			for (int j=0; j<s.length; j++) {
-				if (guess.equals(s[j])) {
-					System.out.println("correct");
-					flag=true;
-					count++;
-					moveWord(test, 0, 1);
-					break;
-				}
-			}
-			if (!flag) {
-				System.out.println("not quite");
-				System.out.println("Correct response: " + test.getEnglishTr());
-			}
-			flag=false;
-		}
-		System.out.println("Your score is " + count +"/10");
-		System.out.println(wordBank[1].size());
-	//	sc.close();
-		loopWords(1);
-		System.out.println(wordBank[1].size());
-		System.out.println(wordBank[2].size());*/
+		loopWords(5); 
 	}
 	
 	public static ArrayList<verb> loadVerbDb(String filename) {
@@ -93,10 +64,21 @@ public class runApp {
 		Scanner sc=new Scanner(System.in);
 		
 		for (int i=1; i<5; i++) {
-			int list=r.nextInt(k);
+			int list=0;
+			int rand=r.nextInt(101);
+			if (rand<6) list=4;
+			else if(rand<12) list=3;
+			else if(rand<25) list=2;
+			else if(rand<50) list=1;
+			System.out.println(list);
 			//ensure that the chosen list isn't empty
 			while (wordBank[list].size()==0) {
-				list=r.nextInt(k);
+				rand=r.nextInt(101);
+				if (rand<6) list=4;
+				else if(rand<12) list=3;
+				else if(rand<25) list=2;
+				else if(rand<50) list=1;
+				else list=0;
 			}
 			int word=r.nextInt(wordBank[list].size());
 			System.out.println(" Please enter the correct english translation:");
