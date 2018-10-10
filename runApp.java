@@ -7,15 +7,15 @@ import java.util.Scanner;
 
 public class runApp {
 	
-	private static ArrayList<verb>[] wordBank = new ArrayList[5];
+	private static ArrayList<Verb>[] wordBank = new ArrayList[5];
 	
 	public static void main (String[] args) {
-		ArrayList<verb> v=loadVerbDb("verb_db.txt");
+		ArrayList<Verb> v=loadVerbDb("verb_db.txt");
 		wordBank[0]=v;
-		wordBank[1]=new ArrayList<verb>();
-		wordBank[2]=new ArrayList<verb>();
-		wordBank[3]=new ArrayList<verb>();
-		wordBank[4]=new ArrayList<verb>();
+		wordBank[1]=new ArrayList<Verb>();
+		wordBank[2]=new ArrayList<Verb>();
+		wordBank[3]=new ArrayList<Verb>();
+		wordBank[4]=new ArrayList<Verb>();
 		Random r = new Random();
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Please enter your name:");
@@ -28,15 +28,15 @@ public class runApp {
 		loopWords(5); 
 	}
 	
-	public static ArrayList<verb> loadVerbDb(String filename) {
+	public static ArrayList<Verb> loadVerbDb(String filename) {
 		try {
-			ArrayList<verb> verbs = new ArrayList<verb>();
+			ArrayList<Verb> verbs = new ArrayList<Verb>();
 			FileReader fr=new FileReader(filename);
 			BufferedReader br=new BufferedReader(fr);
 			String currentLine="potato";
 			while ((currentLine=br.readLine()) !=null) {
 				String[] s=currentLine.split("\t");
-				verb v=new verb(s[0], s[1]);
+				Verb v=new Verb(s[0], s[1]);
 				verbs.add(v);
 			}
 			br.close();
@@ -49,12 +49,12 @@ public class runApp {
 		return null;
 	}
 	
-	public static void moveWord(verb v, int oldList, int newList) {
+	public static void moveWord(Verb v, int oldList, int newList) {
 		wordBank[newList].add(v);
 		wordBank[oldList].remove(v);
 	}
 	
-	public static void resize(ArrayList<verb> list) {
+	public static void resize(ArrayList<Verb> list) {
 		//make a new ArrayList not including all the empty elements
 	}
 	
@@ -82,7 +82,7 @@ public class runApp {
 			}
 			int word=r.nextInt(wordBank[list].size());
 			System.out.println(" Please enter the correct english translation:");
-			verb test=wordBank[list].get(word);
+			Verb test=wordBank[list].get(word);
 			System.out.println(test.getFrenchTr());
 			String guess=sc.nextLine();
 			String[] s=test.getEnglishTr().split(", ");
