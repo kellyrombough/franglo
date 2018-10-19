@@ -1,0 +1,200 @@
+être	to be
+avoir	to have
+aller	to go
+faire	to do, to make
+dire	to say, to tell
+pouvoir	can, to be able to
+vouloir	to want
+savoir	to know
+voir	to see
+devoir	to have to, must
+venir	to come, to occur
+suivre	to follow
+parler	to speak, to talk
+prendre	to take, to get
+croire	to believe, to think
+aimer	to love, to like, to be fond of
+falloir	it is necessary, must, have to
+passer	to pass, to go by, to cross
+penser	to think
+attendre	to wait for, to expect
+trouver	to find
+laisser	to leave
+arriver	to arrive
+donner	to give, give away
+regarder	to look at, to watch
+appeler	to call, to ring
+partir	to go, to leave, to go away
+mettre	to put, to put on, to wear
+rester	to stay, to remain
+arrêter	to stop
+connaître	to know, to experience
+demander	to ask, to ask for, to be looking for
+comprendre	to understand
+sortir	to go out, to take out
+entendre	to hear, to listen to, to understand
+chercher	to look for, to seek
+aider	to help, to aid
+essayer	to try, to try out, to test
+revenir	to come back, to return
+jouer	to play
+finir	to finish, to end
+perdre	to lose, to miss
+sentir	to smell, to sniff, to feel
+rentrer	to bring in, to take in, to get in, to go in, to come home
+vivre	to live, to be alive, to go through
+rendre	to return, to give back, to repay
+tenir	to hold, to run, to keep, to last
+oublier	to forget, to miss
+travailler	to work, to work on, to practice
+manger	to eat
+entrer	to go in, to enter, to come in
+devenir	to become
+commencer	to start, to begin
+payer	to pay
+tirer	to pull, to draw
+ouvrir	to open
+changer	to change, to exchange
+excuser	to forgive, to pardon, to excuse
+dormir	to sleep
+occuper	to occupy, to live in, to take up
+marcher	to walk, to march, to go
+envoyer	to send, to throw, to dispatch, to refer
+apprendre	to learn
+boire	to drink, to soak up
+garder	to keep, to look after, to guard
+montrer	to show, to point out
+asseoir	to sit down, to sit up
+porter	to carry, to wear
+prier	to pray
+servir	to serve
+écrire	to write
+retrouver	to find, to meet
+gagner	to win, to earn
+acheter	to buy
+rappeler	to remind, to remember, to call back, to be reminiscent of
+lire	to read
+monter	to go up, to rise, to come up
+quitter	to leave, to depart
+emmener	to take somebody, to take along
+toucher	to touch
+continuer	to continue, to go on
+raconter	to tell
+répondre	to answer, to reply
+sauver	to save
+rencontrer	to meet, to encounter
+fermer	to close, to shut
+valoir	to hold, to apply, to be worth
+compter	to count
+bouger	to move
+apporter	to bring, to supply
+décider	to decide
+vendre	to sell
+expliquer	to explain, to account for
+agir	to act, to behave, to work, to take effect
+adorer	to adore, to love
+recevoir	to receive, to get
+utiliser	to use
+coucher	to put to bed, to lay down, to sleep
+préférer	to prefer
+offrir	to offer, to give
+préparer	to prepare, to make, to get ready
+choisir	to choose
+conduire	to drive, to lead
+chanter	to sing
+présenter	to introduce, to present
+accepter	to accept
+refuser	to refuse, to turn down
+terminer	to end, to finish
+amuser	to amuse, to entertain
+intéresser	to interest
+rire	to laugh, to have fun, to joke
+pardonner	to forgive, to pardon, to excuse
+embrasser	to kiss, to embrace, to encompass
+danser	to dance
+détester	to hate, to detest
+maintenir	to keep, to maintain
+supposer	to suppose, to assume
+épouser	to marry
+approcher	to approach
+craindre	to fear, to be afraid of
+crier	to shout
+inviter	to invite
+arranger	to arrange, to organize
+remercier	to thank
+répéter	to repeat, to go over, to rehearse
+signer	to sign
+accompagner	to go with, to accompany
+oser	to dare
+permettre	to allow
+annuler	to cancel
+laver	to clean
+se plaindre	to complain
+faire du mal	to hurt
+avoir besoin	to need
+épeler	to spell
+traduire	to translate
+éteindre	to turn off
+allumer	turn on
+se réveiller	wake up
+ajouter	to add
+goûter	to taste
+coûter	to cost
+cuire	to cook
+décrire	to describe
+effacer	to erase
+enseigner	to teach
+nettoyer	to clean
+noter	to write down
+reconnaître	to recognize
+remplacer	to replace
+visiter	to visit
+souhaiter	to wish
+tomber	to fall
+acclamer	to cheer, to acclaim
+accorder	to admit
+accourir	to hurry
+accrocher	to hang, to hang up
+accueillir	to welcome
+acquérir	to acquire
+adjoindre	to appoint
+admirer	to admire
+annoncer	to announce
+arracher	to pull up, to remove
+augmenter	to increase
+avoir raison	to be right
+blaguer	to joke
+causer	to chat, to cause
+cheminer	to walk on
+confondre	to confuse
+conseiller	to recommend
+dépenser	to spend
+emprunter	to borrow
+endormir	to fall asleep
+éviter	to avoid
+féliciter	to congratulate
+geindre	to groan
+informer	to inform
+nommer	to name
+louer	to rent
+ressentir	to feel
+secouer	to shake
+soutenir	to support
+jurer	to swear, to vow
+méprendre	to mistake
+mélanger	to mix
+apprendre par coeur	to memorize
+reconduire	to renew
+rejeter	to reject
+gérer	to manage
+refléter	to reflect
+presser	to squeeze
+répandre	to spread
+frapper	to knock
+remettre	to put back, to put back on
+revêtir	to put on
+enregistrer	to record
+pêcher	to fish
+rougir	to redden
+tousser	to cough
+pleurer	to cry
