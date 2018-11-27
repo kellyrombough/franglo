@@ -30,18 +30,38 @@ public class MySQLConnect {
 				}
 			}
 			
+			ResultSet rset;
+			String partOfSpeech="";
+			while(true) {
+				System.out.println("Which family of words would you like to work on? Choose \"VERB\", \"ADJECTIVE\". or \"ALL\"");
+				//check for invalid inputs, keep asking until valid
+				partOfSpeech = sc.nextLine();
+				partOfSpeech=partOfSpeech.toLowerCase();
+				if(partOfSpeech.equals("all") || partOfSpeech.equals("adjective") || partOfSpeech.equals("verb")) break;
+				System.out.println("Invalid choice");
+			}
+			
+			if(partOfSpeech.equalsIgnoreCase("all")) {
+				String strSelect = "SELECT freq_" + username +", englishTr, frenchTr FROM wordList ORDER BY RAND()";
+				rset = stmt.executeQuery(strSelect);
+			}
+			
+			else {  //chose adjective or verb, so only load those words
 			//Select the columns containing the word list, in English and French
 			//Select the column containing each word's frequency ranking for the user that is logged in
-			String strSelect = "SELECT freq_" + username +", englishTr, frenchTr FROM wordList WHERE freq_" + username + "=0 ORDER BY RAND()";
-			System.out.println(strSelect);
-			ResultSet rset = stmt.executeQuery(strSelect);
+			String strSelect = "SELECT freq_" + username +", englishTr, frenchTr FROM wordList WHERE part_of_speech=\""+partOfSpeech+"\" ORDER BY RAND()";
+			rset = stmt.executeQuery(strSelect);
+			}
 
 			boolean flag=false;
 			while(rset.next()) {   // Move the cursor to the next word, return false if no more words
 				String fr = rset.getString("frenchTr");
+				String[] frArr = fr.split(",");
+				Random rand = new Random();
+				int r=rand.nextInt(frArr.length);
 				String en = rset.getString("englishTr");
 				String[] enArr=en.split(", ");
-				System.out.println("Enter the correct english translation for: " + fr );
+				System.out.println("Enter the correct english translation for: " + frArr[r] );
 				String guess=sc.nextLine();
 				//check if user translated the word correctly
 				for (int i=0; i<enArr.length; i++) {
